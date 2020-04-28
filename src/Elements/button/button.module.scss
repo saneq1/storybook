@@ -1,0 +1,14 @@
+
+.button{
+  height: 40px;
+  min-width: 100px;
+  padding:0 10px;
+  transition: 0.1s;
+  &:hover{
+    background: rgb(208, 208, 208);
+  }
+}
+
+.red{
+  background: red;
+}
