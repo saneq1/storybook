@@ -11,7 +11,6 @@ const App = () => {
 return <div className="container">
     <h1 >webpack courses</h1>
     <MyComponent/>
-
   </div>
 };
 

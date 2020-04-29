@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Button from "./Elements/button/button";
 import './scss.scss'
 import css from './ts.module.scss'
+import Checkbox from "./Elements/checkbox/checkbox";
 
 const MyComponent = () => {
 
@@ -10,6 +11,7 @@ const MyComponent = () => {
     return (
         <div>
             <Button onClick={() => setTest(!test)} className={css.just}>Кнопка</Button>
+            <Checkbox/>
         </div>
     );
 };

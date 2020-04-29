@@ -140,30 +140,7 @@ module.exports = {
       //   test: /\.less$/,
       //   use: cssLoader("less-loader"),
       // },
-      // {
-      //   test: /\.s[ac]ss$/,
-      //   exclude: /\.module.(s(a|c)ss)$/,
-      //   use: cssLoader("sass-loader"),
-      // },
-      // {
-      //   test: /\.module\.s(a|c)ss$/,
-      //   loader: [
-      //     isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-      //     {
-      //       loader: 'css-loader',
-      //       options: {
-      //         modules: true,
-      //         sourceMap: isDev
-      //       }
-      //     },
-      //     {
-      //       loader: 'sass-loader',
-      //       options: {
-      //         sourceMap: isDev
-      //       }
-      //     }
-      //   ]
-      // },
+
       {
               test: /\.module\.s(a|c)ss$/,
 
@@ -184,20 +161,20 @@ module.exports = {
           }
         ]
       },
-     //  {
-     //    test: /\.s(a|c)ss$/,
-     //        exclude: /\.module.(s(a|c)ss)$/,
-     //        loader: [
-     //          isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-     //        'css-loader',
-     //        {
-     //         loader: 'sass-loader',
-     //            options: {
-     //            sourceMap: isDev
-     //          }
-     //      }
-     //    ]
-     // },
+      {
+        test: /\.s(a|c)ss$/,
+            exclude: /\.module.(s(a|c)ss)$/,
+            loader: [
+              isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            {
+             loader: 'sass-loader',
+                options: {
+                sourceMap: isDev
+              }
+          }
+        ]
+     },
 
       {
         test: /\.ts(x?)$/,

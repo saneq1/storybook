@@ -8,7 +8,7 @@ export default {
   component: Welcome,
 };
 
-export const ToStorybook = () => <button onClick={linkTo('Buttons' )}>button</button>;
+export const ToStorybook = () => <button onClick={linkTo('Elements' )}>Elements</button>;
 
 ToStorybook.story = {
   name: 'to Storybook',
